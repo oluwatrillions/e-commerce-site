@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --PaleOrange: hsl(25, 100%, 94%);
+  --VeryDarkBlue: hsl(220, 13%, 13%);
+  --DarkGrayishBlue: hsl(219, 9%, 45%);
+  --GrayishBlue: hsl(220, 14%, 75%);
+  --LightGrayishBlue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 375px;
+  height: 80vh;
+  background: var(--White);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+}
+
+.navBar img {
+  height: 1.2em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5em;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1.5em;
+}
+
+.profilepic {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1.5em;
+}
+
+.doughnut {
+  margin-right: 1em;
+  margin-top: 0.2em;
+  width: 1em;
+}
+
+.logo {
+  font-size: 1.2em;
+}
+
+.product img {
+  width: 375px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+
+.previous img {
+  position: absolute;
+  left: 1em;
+  top: 8em;
+  border-radius: 50%;
+  background: var(--White);
+  padding: 0.7em;
+}
+
+.next img {
+  position: absolute;
+  top: 8em;
+  right: 1em;
+  border-radius: 50%;
+  background: var(--White);
+  padding: 0.7em;
+}
+
+.displayImageDiv {
+  position: relative;
+  margin-top: 2em;
+}
