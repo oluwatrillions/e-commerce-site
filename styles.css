@@ -16,7 +16,7 @@
 
 .container {
   width: 375px;
-  height: 80vh;
+  height: 100vh;
   background: var(--White);
 }
 
@@ -54,10 +54,6 @@
   width: 1em;
 }
 
-.logo {
-  font-size: 1.2em;
-}
-
 .product img {
   width: 375px;
   height: 300px;
@@ -69,7 +65,7 @@
   position: absolute;
   left: 1em;
   top: 8em;
-  border-radius: 50%;
+  border-radius: 50px;
   background: var(--White);
   padding: 0.7em;
 }
@@ -78,7 +74,7 @@
   position: absolute;
   top: 8em;
   right: 1em;
-  border-radius: 50%;
+  border-radius: 50px;
   background: var(--White);
   padding: 0.7em;
 }
@@ -86,4 +82,88 @@
 .displayImageDiv {
   position: relative;
   margin-top: 2em;
+}
+
+.stories h4 {
+  color: var(--Orange);
+  font-size: 0.7em;
+  margin: 1em 0;
+}
+
+.stories h3 {
+  width: 60vw;
+  font-size: 1.5em;
+}
+
+.stories h6 {
+  width: 85vw;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin: 1em 0;
+  color: var(--DarkGrayishBlue);
+}
+
+.stories {
+  margin: 1.5em;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
+}
+
+.promo h1 {
+  font-size: 1.5em;
+}
+
+.promo h4 {
+  padding: 5px;
+  border-radius: 10px;
+  background: var(--PaleOrange);
+  color: var(--Orange);
+  font-size: 1.1em;
+}
+
+.promo h5 {
+  text-decoration: line-through;
+  color: var(--DarkGrayishBlue);
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+.cartCount {
+  width: 85vw;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+  background: rgb(247, 247, 247);
+  padding: 1.2em 0;
+  border-radius: 0.7em;
+  margin: 1em 1.5em;
+}
+
+.cartCount .minus {
+  height: 0.3em;
+}
+
+button {
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 6em;
+  border: none;
+  outline: none;
+  border-radius: 0.7em;
+  outline: none;
+  background: var(--Orange);
+  color: var(--White);
+  font-size: 1em;
+  margin: 0 1.5em 3em 1.5em;
+}
+
+button h6 {
+  font-size: 1em;
 }
