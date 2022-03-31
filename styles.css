@@ -23,7 +23,7 @@
 
 .tank {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   padding-bottom: 6vh;
 }
 
@@ -50,7 +50,6 @@
 }
 
 .menu .logo {
-  width: 10em;
   height: 1.5em;
   margin-right: 10vw;
   margin-top: 1em;
@@ -83,13 +82,134 @@
 .secDiv {
   display: grid;
   grid-template-columns: 40vw 40vw;
-  grid-gap: 5vw;
+  /* grid-gap: 5vw; */
 }
 
 .secDiv .product1 {
   width: 30vw;
   border-radius: 5px;
   margin-bottom: 3vh;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 2.6vw;
+}
+
+.thumbnails img {
+  width: 5.5vw;
+  border-radius: .7em;
+}
+
+.infoDiv {
+  width: 30vw;
+  margin-top: 7vw;
+}
+
+.stories h4 {
+  color: var(--Orange);
+  margin-bottom: 1em;
+}
+
+.stories h3 {
+  width: 25vw;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+.stories h6 {
+  width: 25vw;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: grey;
+  margin-bottom: 1.2em;
+}
+
+.price {
+  width: 40vw;
+}
+
+.promo {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.promo h1 {
+  margin-right: 3vw;
+}
+
+.promo h4 {
+  background-color: rgb(245, 231, 209);
+  padding: .5em;
+  border-radius: .5em;
+  color: var(--Orange);
+}
+
+.priceSlash h5 {
+  text-decoration: line-through;
+  color: rgb(165, 158, 158);
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.productCount {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  width: 20vw;
+}
+
+.cartCount {
+  width: 8vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+  border-radius: .5em;
+  padding: 1em;
+  align-items: center;
+}
+
+.minus {
+  width: 1em;
+  height: .4em;
+}
+
+.plus {
+  width: 1em;
+  height: 1em;
+}
+
+.zero {
+  font-size: 1.2em;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.btnDiv button {
+  width: 12vw;
+  color: white;
+  border-radius: .5em;
+  border: none;
+  outline: none;
+  background: var(--Orange);
+  align-items: center;
+}
+
+button {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.btnDiv img {
+  width: .8em;
+  height: .8em;
 }
 
 
