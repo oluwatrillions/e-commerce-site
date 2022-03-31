@@ -9,51 +9,73 @@
 </head>
 <body>
     <div class="container">
-        <div class="navBar">
-           <div class="menu">
-                <img class="doughnut" src="./images/menu.svg" alt='' />
-                <img class="logo" src="./images/logo.svg" alt=''/>
-           </div>
-           <div class="cart">
-            <img src="./images/pp.svg" alt=''/>
-            <img class="profilepic" src='./images/pp.jpeg' alt='' />
-           </div>
-        </div>
-        <div class="displayImageDiv">
-            <div class="product">
-                <img src="./images/image-product-1.jpg" alt='' />
+        <div class="tank">
+            <div class="navBar">
+                <div class="menu">
+                        <!-- <img class="doughnut" src="./images/menu.svg" alt='' onclick="menuList()"/> -->
+                        <img class="logo" src="./images/logo.svg" alt=''/>
+                </div>
+                <div class="link-div">
+                    <!-- <img src="./images/close.svg" alt=""> -->
+                    <nav class="links">
+                        <ul>
+                            <li>Collections</li>
+                            <li>Men</li>
+                            <li>Women</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="previous">
-                <img src="./images/previous.svg" alt="" />
-            </div>
-            <div class="next">
-                <img src="./images/next.svg" alt="">
-            </div>
-        </div>
-        <div class="stories">
-            <h4>SNEAKER COMPANY</h4>
-            <h3>Fall Limited Edition Sneakers</h3>
-            <h6>The low-profile sneakers are your perfect
-                casual wear companion. Featuring a durable
-                rubber outer sole. they'll withstand everything
-                the weather can offer.</h6>
-        </div>
-        <div class="price">
-            <div class="promo">
-                <h1>$125.00</h1>
-                <h4>50%</h4>
-                <h5>$250.00</h5>
-            </div>
-            <div class="cartCount">
-                <img class="minus" src="./images/minus.svg" alt="">
-                <h6 class="zero">0</h6>
-                <img class="plus" src="./images/plus.svg" alt="">
+            <div class="cart">
+                <img class="cartImg" src="./images/pp.svg" alt=''/>
+                <img class="profilepic" src='./images/pp.jpeg' alt='' />
             </div>
         </div>
-        <button>
-            <img src="./images/cart.svg" alt="">
-            <h6 class="buttonText">Add to cart</h6>
-        </button>
+        <div class="secDiv">
+            <div class="productImg">
+                <div class="fullImg">
+                    <img class="product1" src="./images/image-product-1.jpg" alt='' />
+                </div>
+                <div class="thumbnails">
+                    <img class="product11" src="./images/image-product-1-thumbnail.jpg" alt='' />
+                    <img class="product2" src="./images/image-product-2-thumbnail.jpg" alt='' />
+                    <img class="product3" src="./images/image-product-3-thumbnail.jpg" alt='' />
+                    <img class="product4" src="./images/image-product-4-thumbnail.jpg" alt='' />
+                </div>
+            </div>
+            <div class="infoDiv">
+                <div class="stories">
+                    <h4>SNEAKER COMPANY</h4>
+                    <h3>Fall Limited Edition Sneakers</h3>
+                    <h6>The low-profile sneakers are your perfect
+                        casual wear companion. Featuring a durable
+                        rubber outer sole. they'll withstand everything
+                        the weather can offer.</h6>
+                </div>
+                <div class="price">
+                    <div class="priceSlash">
+                        <div class="promo">
+                            <h1>$125.00</h1>
+                            <h4>50%</h4>
+                        </div>
+                            <h5>$250.00</h5>
+                    </div>
+                    <div class="productCount">
+                        <div class="cartCount">
+                            <img class="minus" src="./images/minus.svg" alt="">
+                            <h6 class="zero">0</h6>
+                            <img class="plus" src="./images/plus.svg" alt="">
+                        </div>
+                        <button>
+                            <img src="./images/cart.svg" alt="">
+                            <h6 class="buttonText">Add to cart</h6>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
