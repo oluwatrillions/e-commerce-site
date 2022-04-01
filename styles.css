@@ -17,7 +17,7 @@
 .container {
   width: 1440px;
   max-width: 80vw;
-  padding: 2em 5em;
+  padding: 2em 0;
   margin-left: 15vw;
   display: flex;
   flex-direction: column;
@@ -35,12 +35,13 @@
   display: flex;
   justify-content: space-between;
   gap: 3vw;
+  font-size: 1.5em;
+  margin-top: 1em;
 }
 
 .link-div ul li {
   list-style-type: none;
-  font-size: 1.3em;
-  margin-top: 1em;
+  cursor: pointer;
 }
 
 .navBar {
@@ -56,7 +57,7 @@
 .menu .logo {
   height: 1.5em;
   margin-right: 10vw;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .cart img {
@@ -81,9 +82,9 @@
 }
 
 .secDiv {
-  display: grid;
-  grid-template-columns: 40vw 40vw;
-  /* grid-gap: 5vw; */
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
 }
 
 .secDiv .product1 {
@@ -95,12 +96,14 @@
 
 .thumbnails {
   display: flex;
+  justify-content: space-between;
   gap: 2.6vw;
 }
 
 .thumbnails img {
   width: 5.5vw;
   border-radius: .7em;
+  cursor: pointer;
 }
 
 .infoDiv {
@@ -110,18 +113,18 @@
 
 .stories h4 {
   color: var(--Orange);
-  margin-bottom: 1vh
+  margin-bottom: 2vh
 }
 
 .stories h3 {
   width: 25vw;
-  font-size: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 2.5em;
+  margin-bottom: 1.2em;
 }
 
 .stories h6 {
-  width: 20vw;
-  font-size: 4em;
+  width: 25vw;
+  font-size: 1.5em;
   font-weight: 500;
   color: grey;
   margin-bottom: 1.2em;
@@ -175,11 +178,13 @@
 .minus {
   width: 1em;
   height: .4em;
+  cursor: pointer;
 }
 
 .plus {
   width: 1em;
   height: 1em;
+  cursor: pointer;
 }
 
 .zero {
@@ -207,6 +212,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: .5em;
+  cursor: pointer;
 }
 
 .btnDiv img {
@@ -237,9 +243,18 @@ button {
     width: 1.2em;
     height: 1.2em;
   }
+
+  .link-div ul li {
+    font-size: 1em;
+    margin-left: -.5vw;
+  }
+
+  .link-div ul {
+    gap: 1vw;
+  }
 }
 
-@media screen and (min-width: 956px){
+@media screen and (max-width: 956px){
   .logo {
     width: 10vw;
   }
@@ -251,7 +266,6 @@ button {
 
   .link-div ul li {
     font-size: 1em;
-    margin-top: 1.5em;
   }
 
   .cart img {
@@ -303,6 +317,94 @@ button {
   button h6 {
     justify-content: flex-start;
     margin-left: -.7em;
+  }
+
+  .minus {
+    width: 1em;
+    margin-left: -.5em;
+  }
+}
+
+@media screen and (max-width:1600px){
+  .infoDiv {
+    margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width:1800px){
+  .infoDiv {
+    margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width:1551px) {
+  .stories h3 {
+    margin-bottom: 1vh;
+  }
+}
+
+@media screen and (max-width:1845px) {
+  .infoDiv {
+    margin-top: 1vh;
+  }
+}
+
+@media screen and (max-width:2085px) {
+  .infoDiv {
+    margin-top: 3vh;
+  }
+
+  .stories h3 {
+    width: 20vw;
+  }
+
+  .stories h6 {
+    width: 23vw;
+  }
+}
+
+@media screen and (max-width:1454px) {
+  .infoDiv {
+    margin-top: 1vh;
+  }
+
+  .stories h3 {
+    width: 25vw;
+  }
+
+  .stories h6 {
+    font-size: 1.5em;
+    width: 28vw;
+    margin-bottom: 1vh;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .stories h3 {
+    font-size: 1.5em;
+  }
+
+  .stories h6 {
+    font-size: 1.2em;
+  }
+
+  .stories h4 {
+    margin-bottom: 1vh;
+  }
+
+  .link-div ul li {
+    font-size: .8em;
+  }
+
+  .menu .logo {
+    width: 9vw;
+  }
+  
+}
+
+@media screen and (max-width:1340px){
+  .link-div ul li {
+    font-size: .9em;
   }
 }
 
