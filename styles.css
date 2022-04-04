@@ -67,6 +67,7 @@
 
 .cartImg {
   margin-top: 1em;
+  position: relative;
 }
 
 .cart {
