@@ -16,7 +16,7 @@
 
 .container {
   width: 1440px;
-  max-width: 80vw;
+  max-width: 100vw;
   padding: 2em 0;
   margin-left: 15vw;
   display: flex;
@@ -26,6 +26,7 @@
 }
 
 .tank {
+  width: 70vw;
   display: flex;
   justify-content: space-between;
   margin-bottom: 8vh;
@@ -68,10 +69,27 @@
 .cartImg {
   margin-top: 1em;
   position: relative;
+  cursor: pointer;
 }
 
 .cart {
   cursor: pointer;
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+}
+
+.cart span {
+  top: -.7vh;
+  right: 0;
+  color: white;
+  background-color: var(--Orange);
+  position: absolute;
+  width: 1.2em;
+  height: .9em;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50%;
 }
 
 .cart .profilepic {
@@ -83,14 +101,88 @@
 }
 
 .secDiv {
+  position: relative;
   display: flex;
   gap: 5vw;
   justify-content: center;
+  margin-left: 10vw;
 }
+
+.showCart {
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  width: 0;
+  padding: 1em 2em;
+  border-radius: .2em;
+  min-height: 10em;
+  background-color: rgba(168, 167, 167, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.showCartItem {
+  width: 20em;
+  transform: rotateY(-360deg);
+  z-index: 5;
+}
+
+.cartHeader {
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 10em;
+  margin-bottom: 1em;
+}
+
+.cartDiv {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 1.5em;
+  border-top: 1px solid rgb(221, 215, 215);
+}
+
+.cartDiv img {
+  width: 3em;
+  height: 3em;
+  border-radius: .2em;
+  margin-right: 1vw;
+}
+
+.carth4 {
+  display: block;
+  font-size: 1.3em;
+}
+
+.itemPrice {
+  display: flex;
+  gap: 1vw;
+  opacity: 0.9;
+}
+
+.numOfItem {
+  margin-left: 1vw;
+}
+
+.itemTotal {
+  margin-left: 1vw;
+  font-weight: 700;
+}
+
+.showCart button {
+  height: 5vh;
+  width: 13vw;
+  align-items: center;
+  border-radius: .2em;
+  border: none;
+  background-color: var(--Orange);
+  color: aliceblue;
+}
+
 
 .secDiv .product1 {
   width: 30vw;
-  min-width: 25vw;
   border-radius: 5px;
   margin-bottom: 3vh;
 }
@@ -108,8 +200,13 @@
 }
 
 .infoDiv {
+  width: 50vw;
+  position: relative;
+}
+
+.stories {
   width: 30vw;
-  margin-top: 10vh;
+  position: relative;
 }
 
 .stories h4 {
@@ -121,6 +218,7 @@
   width: 25vw;
   font-size: 2.5em;
   margin-bottom: 1.2em;
+  position: relative;
 }
 
 .stories h6 {
