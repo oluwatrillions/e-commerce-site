@@ -10,28 +10,26 @@ let stories = document.querySelector('.stories')
 let showcart = document.querySelector('.showCart')
 let itemCount = document.querySelector('.itemCount')
 let linkin = document.querySelectorAll('.linkin')
-let itemPrices = document.querySelector('.itemPrices').innerText
 let itemSymbol = document.querySelector('.itemSymbol')
-let numOfItem = document.querySelector('.numOfItem').innerText
-let itemTotal = document.querySelector('.itemTotal').innerText
 let checkout = document.querySelector('.checkout')
-
+let cartCount = document.querySelector('.cartCount')
 
 minus.addEventListener('click', function () {
     minus = Number(counter.innerText--)
 })
 
 plus.addEventListener('click', function () {
-    plus = Number(counter.innerText++)
+    minus = Number(counter.innerText++)
 })
 
 button.addEventListener('click', function () {
-    wares = counter.textContent;
-    itemCount.textContent = wares
-})
-
-cartImg.addEventListener('click', function () {
-   showcart.classList.toggle('showCartItem')
+  showcart.classList.toggle('showCartItem')
+    itemPrices = wareprice.innerText
+    numOfItem = counter.innerText
+    itemTotal = itemPrices * numOfItem
+    document.querySelector('.itemPrices').innerText = itemPrices
+    document.querySelector('.numOfItem').innerText = numOfItem
+    document.querySelector('.itemTotal').innerText = itemTotal
 })
 
 linkin.forEach((e) => {
@@ -42,11 +40,6 @@ linkin.forEach((e) => {
 })
 
 checkout.addEventListener('click', () => {
-    itemPrices = Number(itemPrices)
-    numOfItem = Number(numOfItem)
-    document.querySelector('.itemTotal').innerText = itemPrices * numOfItem
-    console.log(itemTotal);
-    console.log(itemPrices);
-    console.log(numOfItem);
+  
 })
 
