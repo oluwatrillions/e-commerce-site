@@ -22,8 +22,13 @@ plus.addEventListener('click', function () {
     plus = Number(counter.innerText++)
 })
 
-button.addEventListener('click', function () {
-    showcart.classList.toggle('showCartItem')
+button.addEventListener('click', function (e) {
+    showcart.classList.toggle('showCartItem');
+    
+    if (e.target.classList.contains('cartDiv')) {
+        alert('hey')
+    }
+
     itemDetail = itemDetails.innerText
     itemPrices = wareprice.innerText
     numOfItem = counter.innerText
@@ -32,6 +37,8 @@ button.addEventListener('click', function () {
     document.querySelector('.itemPrices').innerText = itemPrices
     document.querySelector('.numOfItem').innerText = numOfItem
     document.querySelector('.itemTotal').innerText = itemTotal
+
+    
 })
 
 linkin.forEach((e) => {
