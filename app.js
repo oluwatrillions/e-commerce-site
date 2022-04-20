@@ -28,7 +28,7 @@ button.addEventListener('click', function () {
     itemPrices = wareprice.innerText
     numOfItem = counter.innerText
     itemTotal = itemPrices * numOfItem
-    document.querySelector('.itemDetail').innerText = itemDetail
+    document.querySelector('.carth4').innerText = itemDetail
     document.querySelector('.itemPrices').innerText = itemPrices
     document.querySelector('.numOfItem').innerText = numOfItem
     document.querySelector('.itemTotal').innerText = itemTotal
