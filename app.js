@@ -4,7 +4,7 @@ let plus = document.querySelector('.plus')
 let counter = document.querySelector('.zero')
 let cartImg = document.querySelector('.cartImg')
 let button = document.querySelector('.btnDiv')
-let wares = document.querySelector('.wares')
+let itemDetails = document.querySelector('.itemDetail')
 let wareprice = document.querySelector('.wareprice')
 let stories = document.querySelector('.stories')
 let showcart = document.querySelector('.showCart')
@@ -19,14 +19,16 @@ minus.addEventListener('click', function () {
 })
 
 plus.addEventListener('click', function () {
-    minus = Number(counter.innerText++)
+    plus = Number(counter.innerText++)
 })
 
 button.addEventListener('click', function () {
-  showcart.classList.toggle('showCartItem')
+    showcart.classList.toggle('showCartItem')
+    itemDetail = itemDetails.innerText
     itemPrices = wareprice.innerText
     numOfItem = counter.innerText
     itemTotal = itemPrices * numOfItem
+    document.querySelector('.itemDetail').innerText = itemDetail
     document.querySelector('.itemPrices').innerText = itemPrices
     document.querySelector('.numOfItem').innerText = numOfItem
     document.querySelector('.itemTotal').innerText = itemTotal
