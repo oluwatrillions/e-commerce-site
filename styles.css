@@ -32,6 +32,10 @@
   margin-bottom: 8vh;
 }
 
+.linkDecor {
+  border-bottom: 1px solid yellow;
+}
+
 .link-div ul {
   display: flex;
   justify-content: space-between;
@@ -43,6 +47,11 @@
 .link-div ul li {
   list-style-type: none;
   cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .navBar {

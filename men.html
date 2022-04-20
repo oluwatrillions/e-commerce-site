@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tank">
+            <div class="navBar">
+                <div class="menu">
+                        <!-- <img class="doughnut" src="./images/menu.svg" alt='' onclick="menuList()"/> -->
+                        <img class="logo" src="./images/logo.svg" alt=''/>
+                </div>
+                <div class="link-div">
+                    <!-- <img src="./images/close.svg" alt=""> -->
+                    <nav >
+                        <ul class="links">
+                            <a href="collections.html" class="linkin"><li>Collections</li></a>
+                            <a href="men.html" class="linkin"><li>Men</li></a>
+                            <a href="women.html"class="linkin"><li>Women</li></a>
+                            <a href="about.html"class="linkin"><li>About</li></a>
+                            <a href="contact.html"class="linkin"><li>Contact</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="cart">
+               <div class="cartImg"><img  src="./images/pp.svg" alt='' /><span class="itemCount">0</span></div> 
+                <img class="profilepic" src='./images/pp.jpeg' alt='' />
+            </div>
+        </div>
+        <div class="secDiv">
+            <div class="productImg">
+                <div class="fullImg">
+                    <img class="product1" src="./images/image-product-1.jpg" alt='' />
+                </div>
+                <div class="thumbnails">
+                    <img class="product11" src="./images/image-product-1-thumbnail.jpg" alt='' />
+                    <img class="product2" src="./images/image-product-2-thumbnail.jpg" alt='' />
+                    <img class="product3" src="./images/image-product-3-thumbnail.jpg" alt='' />
+                    <img class="product4" src="./images/image-product-4-thumbnail.jpg" alt='' />
+                </div>
+            </div>
+            <div class="infoDiv">
+                <div class="stories">
+                    <h4>SNEAKER COMPANY</h4>
+                    <h3 class="itemDetail">Fall Limited Edition Sneakers</h3>
+                    <h6>The low-profile sneakers are your perfect
+                        casual wear companion. Featuring a durable
+                        rubber outer sole. they'll withstand everything
+                        the weather can offer.</h6>
+                </div>
+                <div class="price">
+                    <div class="priceSlash">
+                        <div class="promo">
+                            <h1 class="wareprice">125</h1>
+                            <h4>50%</h4>
+                        </div>
+                            <h5>$250.00</h5>
+                    </div>
+                    <div class="productCount">
+                        <div class="cartCount">
+                            <img class="minus" src="./images/minus.svg" alt="">
+                            <h6 class="zero">0</h6>
+                            <img class="plus" src="./images/plus.svg" alt="">
+                        </div>
+                        <div class="btnDiv">
+                            <button>
+                                <img src="./images/cart.svg" alt="">
+                                <h6 class="buttonText">Add to cart</h6>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="showCart"><span class="cartHeader">Cart</span>
+                <span class="cart-items">
+                    <div class="cartDiv"><img src="./images/image-product-1-thumbnail.jpg" alt="">
+                        <div class="items">
+                            <span class="carth4">item detail</span>
+                                    <div class="itemPrice">
+                                        <span class="itemPrices">0</span> 
+                                        <span class="itemSymbol">*</span>
+                                        <span class="numOfItem">0</span>
+                                        <span class="itemTotal">0</span>
+                                    </div>
+                        </div> 
+                    </div>
+                    <button class="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

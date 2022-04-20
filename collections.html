@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,40 @@
     <title>E-commerce App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="tank">
             <div class="navBar">
                 <div class="menu">
-                        <!-- <img class="doughnut" src="./images/menu.svg" alt='' onclick="menuList()"/> -->
-                        <img class="logo" src="./images/logo.svg" alt=''/>
+                    <!-- <img class="doughnut" src="./images/menu.svg" alt='' onclick="menuList()"/> -->
+                    <img class="logo" src="./images/logo.svg" alt='' />
                 </div>
                 <div class="link-div">
                     <!-- <img src="./images/close.svg" alt=""> -->
                     <nav class="links">
-                        <ul >
-                            <li class="linkin">Collections</li>
-                            <li class="linkin">Men</li>
-                            <li class="linkin">Women</li>
-                            <li class="linkin">About</li>
-                            <li class="linkin">Contact</li>
+                        <ul>
+                            <a href="collections.html">
+                                <li class="linkin">Collections</li>
+                            </a>
+                            <a href="men.html">
+                                <li class="linkin">Men</li>
+                            </a>
+                            <a href="women.html">
+                                <li class="linkin">Women</li>
+                            </a>
+                            <a href="about.html">
+                                <li class="linkin">About</li>
+                            </a>
+                            <a href="contact.html">
+                                <li class="linkin">Contact</li>
+                            </a>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="cart">
-               <div class="cartImg"><img  src="./images/pp.svg" alt='' /><span class="itemCount">0</span></div> 
+                <div class="cartImg"><img src="./images/pp.svg" alt='' /><span class="itemCount">0</span></div>
                 <img class="profilepic" src='./images/pp.jpeg' alt='' />
             </div>
         </div>
@@ -60,7 +72,7 @@
                             <h1 class="wareprice">125</h1>
                             <h4>50%</h4>
                         </div>
-                            <h5>$250.00</h5>
+                        <h5>$250.00</h5>
                     </div>
                     <div class="productCount">
                         <div class="cartCount">
@@ -82,13 +94,13 @@
                     <div class="cartDiv"><img src="./images/image-product-1-thumbnail.jpg" alt="">
                         <div class="items">
                             <span class="carth4">item detail</span>
-                                    <div class="itemPrice">
-                                        <span class="itemPrices">0</span> 
-                                        <span class="itemSymbol">*</span>
-                                        <span class="numOfItem">0</span>
-                                        <span class="itemTotal">0</span>
-                                    </div>
-                        </div> 
+                            <div class="itemPrice">
+                                <span class="itemPrices">0</span>
+                                <span class="itemSymbol">*</span>
+                                <span class="numOfItem">0</span>
+                                <span class="itemTotal">0</span>
+                            </div>
+                        </div>
                     </div>
                     <button class="checkout">Checkout</button>
             </div>
@@ -97,4 +109,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
