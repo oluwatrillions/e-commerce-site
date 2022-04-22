@@ -180,6 +180,12 @@ a {
   font-weight: 700;
 }
 
+.cartTotal {
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1vw;
+}
+
 .showCart button {
   height: 5vh;
   width: 13vw;

@@ -4,7 +4,6 @@ let plus = document.querySelector('.plus')
 let counter = document.querySelector('.zero')
 let cartImg = document.querySelector('.cartImg')
 let button = document.querySelectorAll('.btnDiv')
-let itemDetails = document.querySelector('.itemDetail')
 let wareprice = document.querySelector('.wareprice')
 let stories = document.querySelector('.stories')
 let showcart = document.querySelector('.showCart')
@@ -13,12 +12,7 @@ let linkin = document.querySelectorAll('.linkin')
 let itemSymbol = document.querySelector('.itemSymbol')
 let checkout = document.querySelector('.checkout')
 let price = document.querySelector('.price')
-
-linkin.forEach((link) => {
-    link.addEventListener('click', (e) => {
-        linkin.classList.add('linkDecor')
-    })
-})
+const cartTotal = document.querySelector('.cartTotal')
 
 minus.addEventListener('click', function () {
     minus = Number(counter.innerText--)
@@ -28,44 +22,90 @@ plus.addEventListener('click', function () {
     plus = Number(counter.innerText++)
 })
 
+cartImg.addEventListener('click', () => {
+        showcart.classList.toggle('showCartItem');
+})
+
 
 button.forEach((btn) => {
-
   btn.addEventListener('click', function (e) {
-    showcart.classList.toggle('showCartItem');
-        console.log(e.target);
+      if (e.target.parentElement.parentElement.parentElement.classList.contains('price')) {
 
-        if (e.target.parentElement.parentElement.parentElement.classList.contains('price')){
-            console.log(e.target.parentElement.parentElement.previousElementSibling.children[0].children[0].innerText);
-        }
-        
-    itemDetail = itemDetails.innerText
-    itemPrices = wareprice.innerText
-    numOfItem = counter.innerText
-    itemTotal = itemPrices * numOfItem
-    document.querySelector('.carth4').innerText = itemDetail
-    document.querySelector('.itemPrices').innerText = itemPrices
-    document.querySelector('.numOfItem').innerText = numOfItem
-    document.querySelector('.itemTotal').innerText = itemTotal 
-})
+            itemPrices = e.target.parentElement.parentElement.previousElementSibling.children[0].children[0].innerText
+            // numOfItem = counter.innerText
+            numOfItem = e.target.parentElement.previousElementSibling.children[1].innerText
+            itemTotal = itemPrices * numOfItem
+                // document.querySelector('.itemPrices').innerText = itemPrices
+                // document.querySelector('.itemCount').innerText = numOfItem
+                // document.querySelector('.itemTotal').innerText = itemTotal 
+          
+          if (e.target.parentElement.parentElement.parentElement.previousElementSibling.classList.contains('stories')) {
+              itemDetail = e.target.parentElement.parentElement.parentElement.previousElementSibling.children[1].innerText
+                // document.querySelector('.carth4').innerText = itemDetail
+          }
 
-})
+          if (e.target.parentElement.parentElement.parentElement.parentElement.previousElementSibling.classList.contains('productImg')) {
+              productImg = e.target.parentElement.parentElement.parentElement.parentElement.previousElementSibling.children[1].children[0].src
+            //   document.querySelector('.cartImage').src = productImg
+          }
+         
+      }
 
-linkin.forEach((e) => {
-    e.addEventListener('click', (e) => {
-        let linkTarget = e.currentTarget
-        linkTarget.style.color = 'red';
+      const cartItemList = {}
+
+      cartItemList.Img = productImg 
+      cartItemList.price =Number(itemPrices) 
+      cartItemList.numOfItem =Number(numOfItem)
+      cartItemList.total =Number(itemTotal)
+      cartItemList.name = itemDetail
+
+      console.log(cartItemList);
+
+      const fullDetails = document.createElement('div')
+
+      fullDetails.classList.add('cartDiv')
+
+          fullDetails.innerHTML =  ` <img class="cartImage" src=${cartItemList.Img} alt="">
+                        <div class="items">
+                            <span class="carth4">${cartItemList.name}</span>
+                            <div class="itemPrice">
+                                <span class="itemPrices">${cartItemList.price}</span>
+                                <span class="itemSymbol">*</span>
+                                <span class="numOfItem">${cartItemList.numOfItem}</span>
+                                <span class="itemTotal">${cartItemList.total}</span>
+                            </div>
+                        </div>
+                    </div>`
+      
+      const cartalog = document.querySelector('.cart-items')
+
+      cartalog.insertBefore(fullDetails, cartTotal)
+      
+            const cartTotalSum = () => {
+              const sumTotal = []
+                const sum = document.querySelectorAll('.itemTotal')
+               
+                sum.forEach((item) => {
+                    sumTotal.push(Number(item.innerText))
+                })
+
+                itemCount.innerText = sumTotal.length
+
+
+                const grandTotal = sumTotal.reduce((total, item)=>{
+                    total += item
+                    return total
+                }, 0)   
+                
+                document.querySelector('.cartTotal').innerText = grandTotal
+                
+      }
+      cartTotalSum();
+
     })
 })
+    checkout.addEventListener('click', () => {
+    
+    })
 
-checkout.addEventListener('click', () => {
-  
-})
-
-const cartList = () => {
-    const cartItemList = {}
-
-
-
-}
 
