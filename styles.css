@@ -164,6 +164,10 @@ a {
   font-size: .9em;
 }
 
+.emptyCart {
+  text-align: center;
+}
+
 .itemPrice {
   display: flex;
   font-size: 1.5em;
@@ -196,11 +200,11 @@ a {
   color: aliceblue;
 }
 
-
-.secDiv .product1 {
+.product1{
   width: 30vw;
   border-radius: 5px;
   margin-bottom: 3vh;
+  display: grid;
 }
 
 .thumbnails {
